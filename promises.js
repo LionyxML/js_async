@@ -3,7 +3,7 @@ const posts2 = [
   { title: 'Post two', body: 'This is the post two'}
 ];
 
-function getPosts() {
+function getPosts2() {
   setTimeout(() => {
     let output = '';
     posts2.forEach((post, i) => {
@@ -13,7 +13,7 @@ function getPosts() {
   }, 1000);
 }
 
-function createPost(post) {
+function createPost2(post) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       posts2.push(post);
@@ -29,8 +29,8 @@ function createPost(post) {
   });
 }
 
-createPost({ title : 'Post Three', body: 'This is post three 2'})
-.then(getPosts)
+createPost2({ title : 'Post Three', body: 'This is post three 2'})
+.then(getPosts2)
 .catch(err => console.log(err));
 
 // Promise.all
