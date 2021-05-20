@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: fantasy;
+  background-color: #333;
+  color: lightgreen;
+}
+
+h2 {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col {
+
+}
+
+#callbacks,
+#asyncawait,
+#promises {
+  background-color: black;
+  width: 30ch;
+  padding: 1rem;
+}

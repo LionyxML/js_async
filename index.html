@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
   <title>Some Async Lab</title>
 </head>
+
 <body>
-<h2>Using Callbacks</h2>
-<div id="callbacks">Loading...</div>
 
-<h2>Using Promises</h2>
-<div id="promises"></div>
+  <div class="container">
+    <div class="col">
+    <h2>Callbacks</h2>
+    <div id="callbacks">Loading...</div>
+    </div>
 
-<h2>Using AsyncAwait (to resolve promises)</h2>
-<div id="asyncawait"></div>
+    <div class="col">
+    <h2>Promises</h2>
+    <div id="promises">Loading...</div>
+    </div>
+
+    <div class="col">
+    <h2>AsyncAwait</h2>
+    <div id="asyncawait">Loading...</div>
+    </div>
+    </div>
 </body>
 
 <script src="callbacks.js"></script>
 <script src="promises.js"></script>
 <script src="asyncawait.js"></script>
+</div>
 
 </html>
