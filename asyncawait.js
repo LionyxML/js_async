@@ -30,9 +30,9 @@ function createPost3(post) {
 }
 
 async function init() {
-  await createPost({ title: 'Post Three', body: 'This is post three'});
+  await createPost3({ title: 'Post Three', body: 'This is post three'});
 
-  getPosts();
+  getPosts3();
 }
 
 init();
@@ -45,4 +45,4 @@ async function fetchUsers() {
 }
 
 
-fetchUsers;
+fetchUsers();
